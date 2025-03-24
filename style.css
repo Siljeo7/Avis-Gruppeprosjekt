@@ -13,6 +13,15 @@ img{
 body {
     position: relative;
     display: flex;
+    flex-direction: column;
     font-family: "Raleway", sans-serif;
 }
 
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+article {
+    border: 1px solid black;
+}
