@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "Raleway", sans-serif;
-    gap: 20px;
+    
     background-color: red;
 
 }
@@ -33,12 +33,51 @@ main {
 }
 
 article {
-    grid-column: span 4;
-    grid-row: span 3;
+    grid-column: span 1;
+    grid-row: span 1;
 }
 #en{
     background-color: var(--gronn);
+    grid-row: span 4;
+    grid-column: span 6;
     
+}
+#to{
+    background-color: var(--lysgronn);
+    grid-row: span 2;
+    grid-column: span 3;
+}
+#tre{
+    background-color: var(--rosa);
+    grid-row: span 2;
+    grid-column: span 3;
+}
+#fire{
+    background-color: var(--lysgronn);
+    grid-row: span 2;
+    grid-column: span 3;
+}
+#fem{
+    background-color: var(--lysgronn);
+    grid-row: span 2;
+    grid-column: span 3;
+}
+#seks{
+    background-color: var(--lysgronn);
+    grid-row: span 3;
+    grid-column: span 4;
+}
+#syv{
+    
+    background-color: var(--lysgronn);
+    grid-row: span 3;
+    grid-column: span 4;
+}
+#aatte{
+    
+    background-color: var(--lysgronn);
+    grid-row: span 3;
+    grid-column: span 4;
 }
 
 nav{
