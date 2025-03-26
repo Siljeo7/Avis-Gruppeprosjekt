@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #647d73ff;
+   
+
+    
+}
+
+.index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+   
+    
+}
+
+
+.index>h1,
+p,
+h2,
+a {
+    margin: 10px;
+    color: white; 
+    
+}
+
+.oppsett{
+    height: 70vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
+    grid-template-rows: repeat(6, 80px);
+    align-content: center;
+    justify-content: center;
+}
+
+.oppsett > div{
+    border: 2px solid white;
+    margin: 5px;
+    background-color: white;
+}
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+
+}
+
+.over{
+    display: flex;
+    justify-content: space-between;
+}
+
+.oppsett > div > input{
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.oppsett input {
+    transition: background-color 0.5s ease-in-out; /* Glatt overgang */
+}
+
+#regel{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#regel:hover {
+    transition: 0.8s;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+}
+
+
+.oppsett input {
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+.oppsett input.correct {
+    animation: bounceIn 0.5s ease-out;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
