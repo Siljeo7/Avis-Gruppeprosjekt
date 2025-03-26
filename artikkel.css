@@ -30,6 +30,9 @@ main {
 h1 {
     font-size: 50px;
 }
+p {
+    line-height: 25px;
+}
 
 section {
     display: flex;
