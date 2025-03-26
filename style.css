@@ -1,12 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
-
-:root{
---rosa: #f79d8dff;
---lysgronn: #94b3a2ff;
---gronn: #647d73ff;
---morkgronn: #404f4aff;
-}
 *{
     margin: 0;
     padding: 0;
@@ -23,15 +15,26 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "Raleway", sans-serif;
+
 }
+
+
 
 main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12,1fr);
+    gap: 20px;
+    min-height: 100vh;
 }
 
 article {
-    
+    grid-column: span 4;
+    grid-row: span 3;
+}
+#en{
+    background-color: var(--gronn);
+    background-image: url(Bilder/Deepseek-Kina.avif);
 }
 
 nav{
@@ -75,4 +78,8 @@ header{
     align-items: center;
     gap: 5px;
     padding: 5px;
+}
+
+article>img{
+    
 }
