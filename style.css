@@ -23,15 +23,26 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "Raleway", sans-serif;
+
 }
+
+
 
 main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12,1fr);
+    gap: 20px;
+    min-height: 100vh;
 }
 
 article {
-    
+    grid-column: span 4;
+    grid-row: span 3;
+}
+#en{
+    background-color: var(--gronn);
+    background-image: url(Bilder/Deepseek-Kina.avif);
 }
 
 nav{
@@ -75,4 +86,8 @@ header{
     align-items: center;
     gap: 5px;
     padding: 5px;
+}
+
+article>img{
+    
 }
