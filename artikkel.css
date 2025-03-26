@@ -10,6 +10,17 @@ img {
 
 body {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main {
+    width: 1190px;
+}
+
+h1 {
+    font-size: 50px;
 }
 
 section {
