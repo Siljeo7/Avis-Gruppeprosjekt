@@ -25,3 +25,14 @@ main {
 article {
     border: 1px solid black;
 }
+
+nav{
+    display: flex;
+
+}
+.left{
+    display: flex;
+}
+.right{
+    display: flex;
+}
