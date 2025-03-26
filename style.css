@@ -66,4 +66,13 @@ header{
 .navitem{
     background-color: rebeccapurple;
     padding: 10px;
+    display: flex;
+    
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
 }
