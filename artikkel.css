@@ -40,11 +40,11 @@ section {
 article {
     width: 900px;
     border: 1px solid black;
-    padding: 50px;
+    padding: 20px;
 }
 
 aside {
     width: 300px;
     border: 1px solid black;
-    padding: 50px;
+    padding: 20px;
 }
