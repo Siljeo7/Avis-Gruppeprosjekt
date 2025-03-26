@@ -15,6 +15,7 @@
 
 img{
     width: 100%;
+    height: auto;
 }
 
 body {
@@ -30,16 +31,36 @@ main {
 }
 
 article {
-    border: 1px solid black;
+    
 }
 
 nav{
     display: flex;
-
+    background-color: aqua;
+    height: 100%;
+    align-items: center;
+    padding: 15px;
 }
 .left{
     display: flex;
+    background-color: blue;
 }
 .right{
     display: flex;
+    margin-left: 20px;
+    justify-content: space-between;
+    flex: ;
+}
+
+.logo{
+    height: 10vh;
+}
+
+header{
+    height: 15vh;
+}
+
+.navitem{
+    background-color: rebeccapurple;
+    padding: 10px;
 }
