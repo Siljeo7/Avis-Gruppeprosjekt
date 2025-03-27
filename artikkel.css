@@ -56,3 +56,39 @@ aside {
     border: 1px solid black;
     padding: 20px;
 }
+
+.footerh{
+    background-color: var(--gronn);
+    height: 400px;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+    padding: 100px 50px;
+}
+
+.footerh h2{
+    margin-bottom: 20px;
+    font-weight: 550;
+    color: black;
+    text-transform: none;
+}
+
+.footerh a{
+    color: white;
+
+}
+
+.footerl{
+    background-color: var(--morkgronn);
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    color: white;
+
+}
+
+.footerl h3{
+    font-size: 6rem;
+}
