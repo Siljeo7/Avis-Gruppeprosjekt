@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="artikkel.css">
 
     <style>
+        :root {
+            --rosa: #f79d8dff;
+            --lysgronn: #94b3a2ff;
+            --gronn: #647d73ff;
+            --morkgronn: #404f4aff;
+        }
+
         .sporsmal {
             display: flex;
             flex-direction: row;
@@ -18,25 +25,34 @@
         }
 
         h1 {
-            margin: 50px 150px 50px 0px;
+            margin: 50px 150px 30px 0px;
             font-size: 4rem;
+            color: var(--morkgronn);
         }
 
-        h2{
+        h2 {
             text-transform: uppercase;
+            color: var(--gronn);
         }
 
-        h3{
+        h3 {
             margin: 0px 150px 40px 80px;
             font-weight: 300;
         }
 
-        h5{
+        h5 {
             font-weight: 300;
+            color: var(--lysgronn);
+        }
+
+        h6{
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--morkgronn);
         }
 
         .om {
-            border: 1px solid black;
+            border: 1px solid var(--gronn);
             padding: 10px;
             margin-top: 15px;
         }
@@ -49,9 +65,19 @@
             margin-top: 550px;
         }
 
+        .forfatter * {
+            margin: 10px;
+        }
+
         aside hr {
             margin-top: 20px;
             width: 50px;
+        }
+
+        .funfact{
+            margin-top: 1600px;
+            border: 1px solid var(--gronn);
+            padding: 20px;
         }
 
         .oppsum {
@@ -65,7 +91,7 @@
             overflow: hidden;
             transition: max-height 0.3s ease-in-out;
             max-height: 60px;
-            /* Kun overskriften vises */
+            margin: 50px 0px;
         }
 
         .oppsum h2 {
@@ -345,6 +371,12 @@
                 <h4>Lars Erik Lie</h4>
                 <h5>Senior Research Manager</h5>
                 <hr>
+            </div>
+            <div class="funfact">
+                <h2>Funfact:</h2>
+                <p>
+                    Visste du at mens folk i Asia er veldig entusiastiske for kunstig intelligens (KI), er folk i Vesten mer skeptiske? For eksempel blir over tre fjerdedeler av befolkningen i Thailand og Indonesia begeistret for KI-baserte produkter, mens omtrent to tredjedeler av folk i Australia, Storbritannia, og USA blir nervøse! 
+                </p>
             </div>
         </aside>
     </section>
