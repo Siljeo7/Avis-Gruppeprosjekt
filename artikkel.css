@@ -44,17 +44,17 @@ section {
 
 article {
     width: 900px;
-    border: 1px solid black;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    border: 1px solid black;
 }
 
 aside {
     width: 300px;
-    border: 1px solid black;
     padding: 20px;
+    border: 1px solid black;
 }
 
 .footerh{
