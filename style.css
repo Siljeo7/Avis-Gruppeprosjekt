@@ -140,7 +140,7 @@ article {
 }
 
 
-article>img{
+a>img{
     height: 100%;
     width: 100%;
 }
