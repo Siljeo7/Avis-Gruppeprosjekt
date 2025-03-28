@@ -19,6 +19,65 @@ body {
 
 
 
+
+/* Header */
+nav{
+    display: flex;
+    background-color: var(--lysgronn);
+    height: 100%;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+}
+.left{
+    display: flex;
+    background-color: var(--lysgronn);
+    gap: 20px;
+}
+.right{
+    display: flex;
+    margin-left: 20px;
+    justify-content: space-around;
+    background-color: var(--lysgronn);
+    flex: 1;
+}
+
+.logo{
+    height: 20vh;
+    flex: 1;
+    
+}
+
+header{
+    height: 20vh;
+}
+
+.navitem{
+    
+    padding: 10px;
+    display: flex;
+    transition: all 0.2s ease-in-out;
+}
+
+.navitem:hover, .login:hover{
+    background-color: var(--gronn);
+    color: white;
+    border-radius: 5px;
+}
+
+
+.login{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+/* Header end */
+
+
+/* Main content */
+
 main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -77,57 +136,6 @@ article {
     grid-column: span 2;
 }
 
-nav{
-    display: flex;
-    background-color: var(--lysgronn);
-    height: 100%;
-    align-items: center;
-    padding: 15px;
-    width: 100%;
-}
-.left{
-    display: flex;
-    background-color: var(--lysgronn);
-    gap: 20px;
-}
-.right{
-    display: flex;
-    margin-left: 20px;
-    justify-content: space-around;
-    background-color: var(--lysgronn);
-    flex: 1;
-}
-
-.logo{
-    height: 10vh;
-    flex: 1;
-}
-
-header{
-    height: 15vh;
-}
-
-.navitem{
-    
-    padding: 10px;
-    display: flex;
-    transition: all 0.2s ease-in-out;
-}
-
-.navitem:hover, .login:hover{
-    background-color: var(--gronn);
-    color: white;
-    border-radius: 5px;
-}
-
-
-.login{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 10px;
-    transition: all 0.2s ease-in-out;
-}
 
 article>img{
     height: 100%;
@@ -159,6 +167,11 @@ article>img{
     font-weight: 500;
     display: none;
 }
+
+/*Main content end */
+
+
+/* Footer */
 
 .footerh{
     background-color: var(--gronn);
@@ -193,3 +206,5 @@ article>img{
 .footerl h3{
     font-size: 6rem;
 }
+
+/* Footer end */
