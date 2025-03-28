@@ -148,7 +148,7 @@ article {
 }
 
 
-article>img{
+a>img{
     height: 100%;
     width: 100%;
 }
@@ -167,11 +167,11 @@ article>img{
     padding: 20px;
     align-items: center;
     gap: 40px;
-    transition: height 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    transition: height 0.3s ease, background-color 0.3s ease;
 }
 
 article:hover .aTittelcon {
-    height: 40%; /* Increase height on hover */
+    height: 40%;
 }
 
 .aTittel{
@@ -180,18 +180,24 @@ article:hover .aTittelcon {
     font-weight: 700;
 }
 
+.aTittel2{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
 .aTittelcon>p{
     color: white;
     
     font-weight: 400;
     
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease; /* Smooth fade-in effect */
+    opacity: 0; 
+    transition: opacity 0.3s ease;
 }
 
 article:hover .aTittelcon>p {
-    display: block; /* Ensure text is visible */
-    opacity: 1; /* Fade in text */
+    display: block;
+    opacity: 1;
 }
 
 /*Main content end */
