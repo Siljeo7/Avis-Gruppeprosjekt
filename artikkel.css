@@ -131,7 +131,7 @@ aside {
 }
 
 .footerl{
-    background-color: var(--morkgronn);
+    background-color: var(--lysgronn);
     height: 300px;
     width: 100%;
     text-align: center;
@@ -142,7 +142,5 @@ aside {
 
 .footerl img{
     width: auto;
-    background-color: var(--lysgronn);
-    border-radius: 60%;
-    padding: 10px;
+    height: 300px;
 }
