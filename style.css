@@ -91,6 +91,7 @@ article {
     grid-column: span 1;
     grid-row: span 1;
     position: relative;
+    overflow: hidden; /* Ensure content doesn't overflow */
 }
 #en{
     background-color: var(--gronn);
@@ -141,18 +142,26 @@ article>img{
     height: 100%;
     width: 100%;
 }
-
+.aTittelcon>h1{
+    width: 100%;
+}
 .aTittelcon{
     display: flex;
     position: absolute;
     bottom: 0;
     left: 0;
+    min-height: 80px;
     height: 20%;
     background-color: rgba(0,0,0,0.5);
     width: 100%;
     padding: 20px;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
+    transition: height 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+article:hover .aTittelcon {
+    height: 40%; /* Increase height on hover */
 }
 
 .aTittel{
@@ -163,9 +172,16 @@ article>img{
 
 .aTittelcon>p{
     color: white;
-    font-size: 1.2rem;
-    font-weight: 500;
-    display: none;
+    
+    font-weight: 400;
+    
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth fade-in effect */
+}
+
+article:hover .aTittelcon>p {
+    display: block; /* Ensure text is visible */
+    opacity: 1; /* Fade in text */
 }
 
 /*Main content end */
