@@ -57,6 +57,56 @@ aside {
     border: 1px solid black;
 }
 
+.oppsum {
+    width: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 83%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 60px;
+}
+
+.oppsum h2 {
+    margin: 0;
+}
+
+.oppsum p {
+    margin-top: 10px;
+    display: none;
+}
+
+.toggle-knapp {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.oppsum.utvid {
+    max-height: 500px;
+}
+
+.oppsum.utvid p {
+    display: block;
+}
+
+.oppsum.utvid .toggle-knapp {
+    content: "▲";
+    transform: rotate(180deg);
+}
+
 .footerh{
     background-color: var(--gronn);
     height: 400px;

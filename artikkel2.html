@@ -45,13 +45,13 @@
             color: var(--lysgronn);
         }
 
-        h6{
+        h6 {
             font-size: 0.85rem;
             font-weight: 500;
             color: var(--morkgronn);
         }
 
-        hr{
+        hr {
             border: 0.5px solid var(--gronn);
         }
 
@@ -78,63 +78,15 @@
             width: 50px;
         }
 
-        .funfact{
-            margin-top: 3900px;
+        .funfact {
+            margin-top: 4100px;
             border: 1px solid var(--gronn);
             padding: 20px;
         }
 
-        .funfact h2{
+        .funfact h2 {
             margin-bottom: 10px;
-        }
-
-        .oppsum {
-            width: 120%;
-            max-width: 600px;
-            background-color: #f9f9f9;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 15px;
-            position: relative;
-            overflow: hidden;
-            transition: max-height 0.3s ease-in-out;
-            max-height: 60px;
-        }
-
-        .oppsum h2 {
-            margin: 0;
-        }
-
-        .oppsum p {
-            margin-top: 10px;
-            display: none;
-        }
-
-        .toggle-knapp {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            background: none;
-            border: none;
-            font-size: 20px;
-            cursor: pointer;
-            color: #555;
-            transition: transform 0.3s ease-in-out;
-        }
-
-
-        .oppsum.utvid {
-            max-height: 500px;
-        }
-
-        .oppsum.utvid p {
-            display: block;
-        }
-
-        .oppsum.utvid .toggle-knapp {
-            content: "▲";
-            transform: rotate(180deg);
-        }
+        } 
     </style>
 </head>
 
@@ -383,11 +335,14 @@
                 <h5>Senior Research Manager</h5>
                 <hr>
             </div>
-            
+
             <div class="funfact">
                 <h2>Funfact:</h2>
                 <p>
-                    Visste du at mens folk i Asia er veldig entusiastiske for kunstig intelligens (KI), er folk i Vesten mer skeptiske? For eksempel blir over tre fjerdedeler av befolkningen i Thailand og Indonesia begeistret for KI-baserte produkter, mens omtrent to tredjedeler av folk i Australia, Storbritannia, og USA blir nervøse! 
+                    Visste du at mens folk i Asia er veldig entusiastiske for kunstig intelligens (KI), er folk i Vesten
+                    mer skeptiske? For eksempel blir over tre fjerdedeler av befolkningen i Thailand og Indonesia
+                    begeistret for KI-baserte produkter, mens omtrent to tredjedeler av folk i Australia, Storbritannia,
+                    og USA blir nervøse!
                 </p>
             </div>
         </aside>
@@ -401,38 +356,30 @@
             </div>
             <div class="art2">
                 <h2>Kunstig intelligens: hvordan vil det påvirke oss?</h2>
-                <a href="https://www.ipsos.com/nb-no/kunstig-intelligens-hvordan-vil-det-pavirke-oss">Link til nettsiden</a>
+                <a href="https://www.ipsos.com/nb-no/kunstig-intelligens-hvordan-vil-det-pavirke-oss">Link til
+                    nettsiden</a>
             </div>
 
             <div class="art3">
                 <h2>Nytt KI-prosjekt skaper turbulens blant Trump sine næraste</h2>
-                <a href="https://www.nrk.no/urix/x-krangel-mellom-elon-musk-og-sam-altman-om-ki-prosjektet-stargate-1.17219289">Link til nettsiden</a>
+                <a
+                    href="https://www.nrk.no/urix/x-krangel-mellom-elon-musk-og-sam-altman-om-ki-prosjektet-stargate-1.17219289">Link
+                    til nettsiden</a>
             </div>
 
             <div class="art4">
                 <h2>Tar grep om KI i høyere utdanning: – Viktig, mener jusstudent</h2>
-                <a href="https://www.nrk.no/tromsogfinnmark/nye-regler-for-ki-i-hoyere-utdanning-1.17348233">Link til nettsiden</a>
+                <a href="https://www.nrk.no/tromsogfinnmark/nye-regler-for-ki-i-hoyere-utdanning-1.17348233">Link til
+                    nettsiden</a>
             </div>
-            
+
         </section>
         <section class="footerl">
             <h3>AA.</h3>
         </section>
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const box = document.querySelector(".oppsum");
-            const button = document.querySelector(".toggle-knapp");
-
-            button.addEventListener("click", function () {
-                box.classList.toggle("utvid");
-
-                button.style.transform = box.classList.contains("utvid") ? "rotate(180deg)" : "rotate(0deg)";
-            });
-        });
-
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
