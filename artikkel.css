@@ -1,5 +1,6 @@
 :root{
     --rosa: #f79d8dff;
+   
     --lysgronn: #94b3a2ff;
     --gronn: #647d73ff;
     --morkgronn: #404f4aff;
@@ -131,7 +132,7 @@ aside {
 
 .footerl{
     background-color: var(--morkgronn);
-    height: 200px;
+    height: 300px;
     width: 100%;
     text-align: center;
     padding: 40px;
@@ -139,6 +140,9 @@ aside {
 
 }
 
-.footerl h3{
-    font-size: 6rem;
+.footerl img{
+    width: auto;
+    background-color: var(--lysgronn);
+    border-radius: 60%;
+    padding: 10px;
 }
