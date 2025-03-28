@@ -79,7 +79,7 @@ article {
 
 nav{
     display: flex;
-    background-color: aqua;
+    background-color: var(--lysgronn);
     height: 100%;
     align-items: center;
     padding: 15px;
@@ -87,13 +87,14 @@ nav{
 }
 .left{
     display: flex;
-    background-color: blue;
+    background-color: var(--lysgronn);
+    gap: 20px;
 }
 .right{
     display: flex;
     margin-left: 20px;
     justify-content: space-around;
-    
+    background-color: var(--lysgronn);
     flex: 1;
 }
 
@@ -107,17 +108,25 @@ header{
 }
 
 .navitem{
-    background-color: rebeccapurple;
+    
     padding: 10px;
     display: flex;
-    
+    transition: all 0.2s ease-in-out;
 }
+
+.navitem:hover, .login:hover{
+    background-color: var(--gronn);
+    color: white;
+    border-radius: 5px;
+}
+
 
 .login{
     display: flex;
     align-items: center;
     gap: 5px;
-    padding: 5px;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
 }
 
 article>img{
