@@ -17,7 +17,10 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
-
+a{
+    text-decoration: none;
+    color: black;
+}
 
 
 /* Header */
@@ -53,7 +56,6 @@ header{
 }
 
 .navitem{
-    
     padding: 10px;
     display: flex;
     transition: all 0.2s ease-in-out;
