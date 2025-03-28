@@ -223,4 +223,9 @@ article:hover .aTittelcon>p {
     font-size: 6rem;
 }
 
+.footerl img{
+    width: auto;
+    height: 250px;
+}
+
 /* Footer end */
