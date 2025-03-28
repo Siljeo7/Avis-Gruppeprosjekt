@@ -51,6 +51,10 @@
             color: var(--morkgronn);
         }
 
+        hr{
+            border: 0.5px solid var(--gronn);
+        }
+
         .om {
             border: 1px solid var(--gronn);
             padding: 10px;
@@ -75,7 +79,7 @@
         }
 
         .funfact{
-            margin-top: 1600px;
+            margin-top: 3900px;
             border: 1px solid var(--gronn);
             padding: 20px;
         }
@@ -85,7 +89,7 @@
         }
 
         .oppsum {
-            width: 100%;
+            width: 120%;
             max-width: 600px;
             background-color: #f9f9f9;
             border: 1px solid #ccc;
@@ -95,7 +99,6 @@
             overflow: hidden;
             transition: max-height 0.3s ease-in-out;
             max-height: 60px;
-            margin: 50px 0px;
         }
 
         .oppsum h2 {
@@ -177,6 +180,7 @@
             <h6>Spørsmål: Hvor enig eller uenig er du i følgende utsagn: "Jeg har god forståelse fpr hva kunstig
                 intelligens er" (Helt / litt enig %)</h6>
             <img src="Bilder/diagram.jpg" alt="">
+            <hr>
             <p>
                 Det er stort spenn i hvordan mennesker i ulike land vurderer egen forståelse av KI. I Indonesia,
                 Sør-Afrika og Thailand mener over tre fjerdedeler av befolkningen at de har en god forståelse av hva KI
@@ -216,6 +220,7 @@
             <h2>Kunstig intelligens - kilde til begeistring eller nervøsitet</h2>
             <h6>Spørsmål: Hvor enig eller uenig er du i følgende utsagn? (Helt / litt enig %)</h6>
             <img src="Bilder/diagram2.jpg" alt="">
+            <hr>
             <p>
                 Norge tilhører sistnevnte kategori, men nordmenn er likevel mindre skeptiske til produkter og tjenester
                 basert på KI enn i de engelsktalende landene. Studien gir ikke svar på hvorfor dette er tilfelle, men en
@@ -272,6 +277,7 @@
                     hvordan du gjør din nåværende jobb de neste fem årene?' (Veldig / ganske sannsynlig %)</h6>
             </div>
             <img src="Bilder/diagram3.jpg" alt="">
+            <hr>
             <p>
                 Også når det gjelder KIs påvirkning i arbeidslivet er det klare demografiske forskjeller. 47 prosent av
                 de spurte under 40 år tror jobben deres vil bli påvirket av KI, sammenlignet med 23 prosent blant de
@@ -306,6 +312,7 @@
             <h6>Spørsmål: Trod du den økte bruken av kunstig intelligens vil gjøre følgende bedre, verre eller det samme
                 i løpet av de neste tre til fem årene? (% Mye / noe bedre)</h6>
             <img src="Bilder/diagram.4.png" alt="">
+            <hr>
             <p>
                 Som vi har sett er nordmenn mindre begeistret for KIs fremtreden enn det globale landsgjennomsnittet, og
                 dette reflekteres også i hvordan vi vurderer effekten av KI på ulike samfunnsområder. Selv om nesten
@@ -353,6 +360,10 @@
                 </p>
             </div>
 
+        </article>
+
+
+        <aside>
             <div class="oppsum">
                 <h2>Oppsummering</h2>
                 <p>
@@ -366,16 +377,13 @@
                 </p>
                 <button class="toggle-knapp">▼</button>
             </div>
-        </article>
-
-
-        <aside>
             <div class="forfatter">
                 <h2>Forfatter</h2>
                 <h4>Lars Erik Lie</h4>
                 <h5>Senior Research Manager</h5>
                 <hr>
             </div>
+            
             <div class="funfact">
                 <h2>Funfact:</h2>
                 <p>
@@ -420,7 +428,6 @@
             button.addEventListener("click", function () {
                 box.classList.toggle("utvid");
 
-                // Roterer pilen riktig vei
                 button.style.transform = box.classList.contains("utvid") ? "rotate(180deg)" : "rotate(0deg)";
             });
         });

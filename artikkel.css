@@ -1,5 +1,6 @@
 :root{
     --rosa: #f79d8dff;
+   
     --lysgronn: #94b3a2ff;
     --gronn: #647d73ff;
     --morkgronn: #404f4aff;
@@ -44,17 +45,17 @@ section {
 
 article {
     width: 900px;
-    border: 1px solid black;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    border: 1px solid black;
 }
 
 aside {
     width: 300px;
-    border: 1px solid black;
     padding: 20px;
+    border: 1px solid black;
 }
 
 .footerh{
@@ -81,7 +82,7 @@ aside {
 
 .footerl{
     background-color: var(--morkgronn);
-    height: 200px;
+    height: 300px;
     width: 100%;
     text-align: center;
     padding: 40px;
@@ -89,6 +90,9 @@ aside {
 
 }
 
-.footerl h3{
-    font-size: 6rem;
+.footerl img{
+    width: auto;
+    background-color: var(--lysgronn);
+    border-radius: 60%;
+    padding: 10px;
 }
