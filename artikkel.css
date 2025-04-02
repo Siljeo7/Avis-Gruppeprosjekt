@@ -67,7 +67,7 @@ aside {
 }
 
 .seksjon1{
-    height: 600px;
+    height: 800px;
 }
 
 .oppsum {
@@ -119,6 +119,14 @@ aside {
     transform: rotate(180deg);
 }
 
+.forfatter {
+    margin-top: 300px;
+}
+
+.forfatter * {
+    margin: 10px;
+}
+
 .footerh{
     background-color: var(--gronn);
     height: 400px;
@@ -155,6 +163,31 @@ aside {
     width: auto;
     height: 250px;
 }
+
+/*Artikkel 4*/
+#hovedImg {
+    height: 450px;
+    margin-left: 25px;
+    padding-top: 20px;
+    width: 750px;
+}
+
+#politiker {
+    width: 600px;
+    height: 340px;
+}
+
+#maling {
+    width: 750px;
+    height: 200px;
+}
+
+.bildetekst {
+    font-size: 12px;
+    width: 750px;
+
+}
+/*ARTIKKEL 4 SLUTT*/
 
 /* test spill HTML LIGGER I ARTIKKEL 4 SIN ASIDE */
 .spill{
