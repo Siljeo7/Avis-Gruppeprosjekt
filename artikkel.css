@@ -212,3 +212,15 @@ aside {
     padding: 8px;
 }
 /* avslutning finn */
+
+/* SATS REKLAME, HTML I ARTIKKEL 4*/
+.satsReklame{
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid dimgray;
+}
+
+.satsReklame p{
+    font-size: 10px;
+}
+/* SATS REKLAME AVSLUTT*/
