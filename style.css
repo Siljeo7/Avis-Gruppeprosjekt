@@ -326,7 +326,7 @@ p .oss {
 
 @media ( max-width : 1100px){
     body{
-        background-color: red;
+        
     }
 
     .aTittelcon> p{
@@ -340,5 +340,11 @@ p .oss {
 
     .aTittelcon> h1{
         text-align: center;
+    }
+}
+
+@media (max-width:930px){
+    #h1aatte{
+        font-size: 0.8rem;
     }
 }
