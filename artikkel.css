@@ -163,3 +163,11 @@ aside {
     color: white;
 }
 /* Test spill avslutt*/
+
+/* FINN REKLAME, HTML I ARTIKKEL 4*/
+.finnReklame{
+    margin-top: 5px;
+    border: 1px solid dimgray;
+    padding: 8px;
+}
+/* avslutning finn */
