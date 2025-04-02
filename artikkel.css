@@ -30,8 +30,16 @@ main {
 }
 
 h1 {
-    font-size: 50px;
+    margin: 50px 150px 30px 0px;
+    font-size: 4rem;
+    color: var(--morkgronn);
 }
+
+h2 {
+    text-transform: uppercase;
+    color: var(--gronn);
+}
+
 p {
     line-height: 25px;
     font-size: 19px;
@@ -59,7 +67,7 @@ aside {
 }
 
 .seksjon1{
-    height: 600px;
+    height: 800px;
 }
 
 .oppsum {
@@ -111,6 +119,14 @@ aside {
     transform: rotate(180deg);
 }
 
+.forfatter {
+    margin-top: 300px;
+}
+
+.forfatter * {
+    margin: 10px;
+}
+
 .footerh{
     background-color: var(--gronn);
     height: 400px;
@@ -148,6 +164,31 @@ aside {
     height: 250px;
 }
 
+/*Artikkel 4*/
+#hovedImg {
+    height: 450px;
+    margin-left: 25px;
+    padding-top: 20px;
+    width: 750px;
+}
+
+#politiker {
+    width: 600px;
+    height: 340px;
+}
+
+#maling {
+    width: 750px;
+    height: 200px;
+}
+
+.bildetekst {
+    font-size: 12px;
+    width: 750px;
+
+}
+/*ARTIKKEL 4 SLUTT*/
+
 /* test spill HTML LIGGER I ARTIKKEL 4 SIN ASIDE */
 .spill{
     background-color: #647d73ff;
@@ -163,3 +204,23 @@ aside {
     color: white;
 }
 /* Test spill avslutt*/
+
+/* FINN REKLAME, HTML I ARTIKKEL 4*/
+.finnReklame{
+    margin-top: 5px;
+    border: 1px solid dimgray;
+    padding: 8px;
+}
+/* avslutning finn */
+
+/* SATS REKLAME, HTML I ARTIKKEL 4*/
+.satsReklame{
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid dimgray;
+}
+
+.satsReklame p{
+    font-size: 10px;
+}
+/* SATS REKLAME AVSLUTT*/
