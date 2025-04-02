@@ -162,7 +162,7 @@ a>img{
     left: 0;
     min-height: 80px;
     height: 20%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
     width: 100%;
     padding: 20px;
     align-items: center;
@@ -182,8 +182,12 @@ article:hover .aTittelcon {
 
 .aTittel2{
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
+}
+
+#to > .aTittelcon{
+    padding: 30px;
 }
 
 .aTittelcon>p{
