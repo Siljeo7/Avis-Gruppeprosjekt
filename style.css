@@ -272,7 +272,8 @@ article:hover .aTittelcon>p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #94b3a2ff;
+    background-color: var(--rosa);
+    
 }
 
 .oss {
