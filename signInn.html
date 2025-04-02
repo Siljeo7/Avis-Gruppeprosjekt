@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  </title>
+    <title> Sign inn - AA </title>
+<style> 
+        :root {
+            --rosa: #f79d8dff;
+            --lysgronn: #94b3a2ff;
+            --gronn: #647d73ff;
+            --morkgronn: #404f4aff;
+        }
+
+        body {
+            font-family: "Raleway", sans-serif;
+            color: var(--morkgronn);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 60px;
+        }
+
+        article {
+            background-color: var(--lysgronn);
+            padding: 30px 50px 50px; 
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 180px;
+        }
+</style>
 </head>
 <body>
+
+    <header>
+        <nav>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Logg inn på algoritmeavisen</h1>
+
+        <article>
+            <h2>Logg inn:</h2>
+            <form action="takk2.html" method="post">
+                <label>Brukernavn:</label>
+                <input name="username">
+                <label>Passord:</label>
+                <input name="password">
+                <button type="submit">Sign inn</button>
+            </form>
+        </article>
+
+    </main>
+
+
+    <footer>
+    </footer>   
     
 </body>
 </html>
