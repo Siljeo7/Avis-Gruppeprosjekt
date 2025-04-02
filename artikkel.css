@@ -119,6 +119,14 @@ aside {
     transform: rotate(180deg);
 }
 
+.forfatter {
+    margin-top: 300px;
+}
+
+.forfatter * {
+    margin: 10px;
+}
+
 .footerh{
     background-color: var(--gronn);
     height: 400px;
