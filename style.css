@@ -44,13 +44,23 @@ nav{
     display: flex;
     background-color: var(--lysgronn);
     gap: 20px;
+    align-items: center;
 }
 .right{
     display: flex;
     margin-left: 20px;
+    gap: 20px;
     justify-content: space-around;
     background-color: var(--lysgronn);
     flex: 1;
+}
+
+input{
+    width: 60%;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
 }
 
 .logo{
@@ -162,7 +172,7 @@ a>img{
     left: 0;
     min-height: 80px;
     height: 20%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
     width: 100%;
     padding: 20px;
     align-items: center;
@@ -182,8 +192,12 @@ article:hover .aTittelcon {
 
 .aTittel2{
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
+}
+
+#to > .aTittelcon{
+    padding: 30px;
 }
 
 .aTittelcon>p{
@@ -245,3 +259,59 @@ article:hover .aTittelcon>p {
 }
 
 /* Footer end */
+
+
+/* OM OSS SIN CSS*/
+.container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--rosa);
+    
+}
+
+.oss {
+
+    padding: 50px;
+    display: flex;
+    padding-bottom: 100px;
+    width: 1000px;
+}
+
+
+.container h1 {
+    margin-top: 40px;
+    padding: 40px;
+}
+
+
+.kilde {
+
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    padding-top: 0px;
+    width: 1000px;
+
+}
+
+.kilde img {
+    width: 400px;
+}
+
+p .oss {
+    padding: 40px;
+}
+
+.bilde img {
+    width: 400px;
+    height: auto;
+}
+
+.bilde{
+    display: flex;
+    align-items: center;
+}
+
+/*OM OSS SLUTT*/

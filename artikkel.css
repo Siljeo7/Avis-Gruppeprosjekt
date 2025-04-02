@@ -144,3 +144,19 @@ aside {
     width: auto;
     height: 250px;
 }
+
+/* test spill HTML LIGGER I ARTIKKEL 4 SIN ASIDE */
+.spill{
+    background-color: #647d73ff;
+    padding: 4px;
+    text-align: center;
+}
+.spill img{
+    height: 150px;
+    width: auto;
+}
+.spill a{
+    text-decoration: none;
+    color: white;
+}
+/* Test spill avslutt*/
