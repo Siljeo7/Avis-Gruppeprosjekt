@@ -58,15 +58,18 @@ aside {
     border: 1px solid black;
 }
 
+.seksjon1{
+    height: 600px;
+}
+
 .oppsum {
     width: 300px;
     background-color: var(--rosa);
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 10px;
-    position: absolute;
-    top: 50%;
-    left: 83%;
+    position: relative;
+    left: 50%;
     transform: translateX(-50%);
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
