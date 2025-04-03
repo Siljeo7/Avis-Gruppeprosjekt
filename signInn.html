@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/59a3ebea89.js" crossorigin="anonymous"></script>
     <title> Sign inn - AA </title>
-<style> 
+    <style>
         :root {
             --rosa: #f79d8dff;
             --lysgronn: #94b3a2ff;
@@ -19,12 +21,20 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            padding: 40px;
         }
+
         h1 {
             text-align: center;
             font-size: 3rem;
+            color: white;
         }
+
+        header {
+            background-color: var(--gronn);
+            padding: 20px;
+            width: 100vw;
+        }
+
 
         h2 {
             font-size: 2rem;
@@ -32,25 +42,47 @@
         }
 
         article {
-            background-color: var(--lysgronn);
-            padding: 30px 50px 50px; 
+            padding: 50px 200px 70px;
             border-radius: 10px;
+            border: 1px solid var(--gronn);
             display: flex;
             flex-direction: column;
             margin-top: 180px;
         }
-</style>
+
+        button{
+            background-color: var(--rosa);
+            padding: 10px;
+            border: 1px solid var(--gronn);
+            border-radius: 5px;
+        }
+
+        i{
+            color: white;
+            font-size: 2rem;
+            margin-right: 280px;
+            margin-left: -340px;
+        }
+        a{
+            text-decoration: none;
+        }
+        
+    </style>
 </head>
+
 <body>
 
     <header>
-        <nav>
-        </nav>
+        
+        <h1>
+            <a href="index.html"><i class="fa-solid fa-arrow-left"></i>
+            </a>
+            Logg inn på algoritmeavisen
+        </h1>
     </header>
 
-    <main>
-        <h1>Logg inn på algoritmeavisen</h1>
 
+    <main>
         <article>
             <h2>Logg inn:</h2>
             <form action="takk2.html" method="post">
@@ -61,12 +93,12 @@
                 <button type="submit">Sign inn</button>
             </form>
         </article>
-
     </main>
 
 
     <footer>
-    </footer>   
-    
+    </footer>
+
 </body>
+
 </html>

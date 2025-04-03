@@ -25,6 +25,77 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
+/* Header */
+nav{
+    display: flex;
+    background-color: var(--lysgronn);
+    height: 100%;
+    align-items: center;
+    padding: 15px;
+    width: 100vw;
+}
+.left{
+    display: flex;
+    background-color: var(--lysgronn);
+    gap: 20px;
+    align-items: center;
+}
+.right{
+    display: flex;
+    margin-left: 20px;
+    gap: 20px;
+    justify-content: space-around;
+    background-color: var(--lysgronn);
+    flex: 1;
+}
+
+input{
+    width: 60%;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.logo{
+    height: 12vh;
+    flex: 1;
+    
+}
+
+header{
+    height: 20vh;
+}
+
+.navitem{
+    padding: 10px;
+    display: flex;
+    transition: all 0.2s ease-in-out;
+}
+
+.navitem:hover, .login:hover{
+    background-color: var(--gronn);
+    color: white;
+    border-radius: 5px;
+}
+
+
+.login{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/* Header end */
+
+
+
 main {
     width: 1190px;
 }
