@@ -337,12 +337,21 @@ video {
 /* Test spill avslutt*/
 
 /* Darkmode classes */
+.greenGrey{
+    color: var(--hvitgragronn);
+}
+
+.greyGreen{
+    color: var(--gragronn);
+}
+
 .darkGB {
     background-color: var(--morkgronn);
 }
 
 .darkB {
     background-color: rgb(20, 20, 20);
+    color: var(--gragronn);
 }
 
 .whiteC {

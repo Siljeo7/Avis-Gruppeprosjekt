@@ -5,7 +5,9 @@ const body = document.body
 const icon = document.getElementById("darkmodeIcon")
 const navElm = document.querySelector("nav")
 const navitems = document.querySelectorAll(".navitem")
-
+const h1Elms = document.querySelectorAll("h1")
+const pElms = document.querySelectorAll("p")
+const h2Elms = document.querySelectorAll("h2")
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -57,6 +59,24 @@ function darkmode(){
         
 
     });
+    h1Elms.forEach(h1ItemElm => {
+        h1ItemElm.classList.toggle("greenGrey");
+        
+
+    });
+    pElms.forEach(pItemElm => {
+        pItemElm.classList.toggle("greenGrey");
+        
+
+    });
+    h2Elms.forEach(h2ItemElm => {
+        h2ItemElm.classList.toggle("greyGreen");
+        
+
+    });
+    
+    
+    
     console.log(document.querySelector(".login"))
     document.getElementById("login").classList.toggle("whiteC")
     document.getElementById("user").classList.toggle("whiteC")
