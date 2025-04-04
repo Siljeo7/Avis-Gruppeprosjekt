@@ -33,7 +33,9 @@ function darkmode(){
     icon.classList.toggle("fa-moon");
     icon.classList.toggle("fa-sun");
     icon.classList.toggle("whiteC");
+
+    /*
     const leftpart = document.querySelector(".left")
     const rightpart = document.querySelector(".right")
-
+    */
 }

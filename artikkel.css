@@ -236,6 +236,36 @@ aside {
     height: 250px;
 }
 
+/*Artikkel 3*/
+.avstand {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.seksjon2 {
+    display: flex;
+    flex-direction: column;
+}
+
+ a {
+    color: black;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.kongen {
+    display: flex;
+}
+
+.kongen img {
+    width: 200px;
+}
+
+/*Artikkel 3 slutt*/
+
 /*Artikkel 4*/
 #hovedImg {
     height: 450px;
@@ -260,6 +290,12 @@ aside {
 
 }
 /*ARTIKKEL 4 SLUTT*/
+
+/*Artikkel 5*/
+video {
+    width: 100%;
+}
+/*Artikkel 5 slutt*/
 
 /* test spill HTML LIGGER I ARTIKKEL 4 SIN ASIDE */
 .spill{
