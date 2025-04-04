@@ -1,10 +1,13 @@
-:root{
+:root {
     --rosa: #f79d8dff;
     --lysgronn: #94b3a2ff;
     --gronn: #647d73ff;
     --morkgronn: #404f4aff;
-    }
-    
+    --gragronn: #c3d5cbff;
+    --lysgragronn: #d6e1dbff;
+    --hvitgragronn: #e8edebff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +29,7 @@ body {
 }
 
 /* Header */
-nav{
+nav {
     display: flex;
     background-color: var(--lysgronn);
     height: 100%;
@@ -34,13 +37,15 @@ nav{
     padding: 15px;
     width: 100vw;
 }
-.left{
+
+.left {
     display: flex;
     background-color: var(--lysgronn);
     gap: 20px;
     align-items: center;
 }
-.right{
+
+.right {
     display: flex;
     margin-left: 20px;
     gap: 20px;
@@ -49,7 +54,7 @@ nav{
     flex: 1;
 }
 
-input{
+input {
     width: 60%;
     padding: 10px;
     outline: none;
@@ -57,30 +62,31 @@ input{
     border: none;
 }
 
-.logo{
+.logo {
     height: 12vh;
     flex: 1;
-    
+
 }
 
-header{
+header {
     height: 20vh;
 }
 
-.navitem{
+.navitem {
     padding: 10px;
     display: flex;
     transition: all 0.2s ease-in-out;
 }
 
-.navitem:hover, .login:hover{
+.navitem:hover,
+.login:hover {
     background-color: var(--gronn);
     color: white;
     border-radius: 5px;
 }
 
 
-.login{
+.login {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -88,10 +94,11 @@ header{
     transition: all 0.2s ease-in-out;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
+
 /* Header end */
 
 
@@ -137,7 +144,7 @@ aside {
     border: 1px solid black;
 }
 
-.seksjon1{
+.seksjon1 {
     height: 450px;
 }
 
@@ -209,7 +216,7 @@ aside {
     margin-bottom: 10px;
 }
 
-.footerh{
+.footerh {
     background-color: var(--gronn);
     height: 400px;
     width: 100%;
@@ -219,19 +226,19 @@ aside {
     padding: 100px 50px;
 }
 
-.footerh h2{
+.footerh h2 {
     margin-bottom: 20px;
     font-weight: 550;
     color: black;
     text-transform: none;
 }
 
-.footerh a{
+.footerh a {
     color: white;
 
 }
 
-.footerl{
+.footerl {
     background-color: var(--lysgronn);
     height: 300px;
     width: 100%;
@@ -241,7 +248,7 @@ aside {
 
 }
 
-.footerl img{
+.footerl img {
     width: auto;
     height: 250px;
 }
@@ -258,7 +265,7 @@ aside {
     flex-direction: column;
 }
 
- a {
+a {
     color: black;
 }
 
@@ -299,80 +306,91 @@ aside {
     /*width: 750px;*/
 
 }
+
 /*ARTIKKEL 4 SLUTT*/
 
 /*Artikkel 5*/
 video {
     width: 100%;
 }
+
 /*Artikkel 5 slutt*/
 
 /* test spill HTML LIGGER I ARTIKKEL 4 SIN ASIDE */
-.spill{
+.spill {
     background-color: #647d73ff;
     padding: 4px;
     text-align: center;
 }
-.spill img{
+
+.spill img {
     height: 150px;
     width: auto;
 }
-.spill a{
+
+.spill a {
     text-decoration: none;
     color: white;
 }
+
 /* Test spill avslutt*/
 
 /* Darkmode classes */
-.darkGB{
+.darkGB {
     background-color: var(--morkgronn);
 }
 
-.darkB{
-    background-color: rgb(20,20,20);
+.darkB {
+    background-color: rgb(20, 20, 20);
 }
 
-.whiteC{
+.whiteC {
     color: white;
 }
 
 /* Darkmode classes end */
 
 /* FINN REKLAME, HTML I ARTIKKEL 4*/
-.finnReklame{
+.finnReklame {
     margin-top: 100px;
     border: 1px solid dimgray;
     padding: 8px;
 }
+
 /* avslutning finn */
 
 /* SATS REKLAME, HTML I ARTIKKEL 4*/
-.satsReklame{
+.satsReklame {
     padding: 8px;
     margin-top: 100px;
     border: 1px solid dimgray;
 }
 
-.satsReklame p{
+.satsReklame p {
     font-size: 10px;
 }
+
 /* SATS REKLAME AVSLUTT*/
 
 
 /* TIL TOPPEN KNAPP*/
 
-.scroll{
+.scroll {
     border-radius: 10px;
     padding: 10px;
     background-color: #404f4aff;
-   margin-top: 10px;
-   margin-bottom: -15px;
-    
+    margin-top: 10px;
+    margin-bottom: -15px;
+
 }
-.scroll h2{
+
+.scroll h2 {
     color: #94b3a2ff;
 }
 
-html,body{ scroll-behavior: smooth}
+html,
+body {
+    scroll-behavior: smooth
+}
 
 /*TIL TOPPEN AVSLUTT*/
