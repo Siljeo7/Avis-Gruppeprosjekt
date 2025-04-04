@@ -1,8 +1,10 @@
 const articles = document.querySelectorAll('article');
-
-
-
-
+const toppbox = document.querySelector(".scroll")
+let x = 0
+const body = document.body
+const icon = document.getElementById("darkmodeIcon")
+const navElm = document.querySelector("nav")
+const navitems = document.querySelectorAll(".navitem")
 
 
 
@@ -18,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-const toppbox = document.querySelector(".scroll")
+
 
 function scrollTopp(){
     console.log("Scroller opp")
@@ -27,15 +29,35 @@ function scrollTopp(){
 
 
 function darkmode(){
-    const body = document.body
+    
     body.classList.toggle("darkB");
-    const icon = document.getElementById("darkmodeIcon")
+    
     icon.classList.toggle("fa-moon");
     icon.classList.toggle("fa-sun");
     icon.classList.toggle("whiteC");
+    
+    navElm.classList.toggle("darkGB");
 
-    /*
+    
     const leftpart = document.querySelector(".left")
     const rightpart = document.querySelector(".right")
-    */
+    leftpart.classList.toggle("darkGB");
+    rightpart.classList.toggle("darkGB");
+    const logo = document.querySelector(".logo")
+    if (x == 0){
+        x = 1
+        logo.src="Bilder/LogoHvit.png"
+    }
+    else{
+        x = 0
+        logo.src="Bilder/logoRIKTIG.png"
+    }
+    navitems.forEach(navItemElm => {
+        navItemElm.classList.toggle("whiteC");
+        
+
+    });
+    console.log(document.querySelector(".login"))
+    document.getElementById("login").classList.toggle("whiteC")
+    document.getElementById("user").classList.toggle("whiteC")
 }
