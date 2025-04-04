@@ -304,7 +304,8 @@ aside {
     border-radius: 10px;
     padding: 10px;
     background-color: #404f4aff;
-    margin-top: 300px;
+   margin-top: 10px;
+   margin-bottom: -15px;
     
 }
 .scroll h2{
