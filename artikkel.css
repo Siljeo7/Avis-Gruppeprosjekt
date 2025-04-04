@@ -278,7 +278,7 @@ aside {
 
 /* FINN REKLAME, HTML I ARTIKKEL 4*/
 .finnReklame{
-    margin-top: 5px;
+    margin-top: 100px;
     border: 1px solid dimgray;
     padding: 8px;
 }
@@ -287,7 +287,7 @@ aside {
 /* SATS REKLAME, HTML I ARTIKKEL 4*/
 .satsReklame{
     padding: 8px;
-    margin-top: 5px;
+    margin-top: 100px;
     border: 1px solid dimgray;
 }
 
