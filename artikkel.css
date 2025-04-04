@@ -236,6 +236,23 @@ aside {
     height: 250px;
 }
 
+/*Artikkel 3*/
+.avstand {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.seksjon2 {
+    display: flex;
+    flex-direction: column;
+}
+
+ a {
+    color: black;
+}
+/*Artikkel 3 slutt*/
+
 /*Artikkel 4*/
 #hovedImg {
     height: 450px;
