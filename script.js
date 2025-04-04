@@ -17,6 +17,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+const toppbox = document.querySelector(".scroll")
+
+function scrollTopp(){
+    console.log("Scroller opp")
+    window.scrollTo(0, 0);
+  }
+
+
 function darkmode(){
     const body = document.body
     body.classList.toggle("darkB");
@@ -28,8 +37,5 @@ function darkmode(){
     /*
     const leftpart = document.querySelector(".left")
     const rightpart = document.querySelector(".right")
-    .leftpart.classList.toggle("darkGB")
-    .rightpart.classList.toggle("darkGB")
     */
-   
 }
