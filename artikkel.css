@@ -291,6 +291,12 @@ aside {
 }
 /*ARTIKKEL 4 SLUTT*/
 
+/*Artikkel 5*/
+video {
+    width: 100%;
+}
+/*Artikkel 5 slutt*/
+
 /* test spill HTML LIGGER I ARTIKKEL 4 SIN ASIDE */
 .spill{
     background-color: #647d73ff;
