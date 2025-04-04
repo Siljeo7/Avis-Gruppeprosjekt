@@ -16,3 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
         button.style.transform = box.classList.contains("utvid") ? "rotate(180deg)" : "rotate(0deg)";
     });
 });
+
+const toppbox = document.querySelector(".scroll")
+
+function scrollTopp(){
+    console.log("Scroller opp")
+    window.scrollTo(0, 0);
+}

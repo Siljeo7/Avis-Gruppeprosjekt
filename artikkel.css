@@ -295,3 +295,21 @@ aside {
     font-size: 10px;
 }
 /* SATS REKLAME AVSLUTT*/
+
+
+/* TIL TOPPEN KNAPP*/
+
+.scroll{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #404f4aff;
+    margin-top: 300px;
+    
+}
+.scroll h2{
+    color: #94b3a2ff;
+}
+
+html,body{ scroll-behavior: smooth}
+
+/*TIL TOPPEN AVSLUTT*/
