@@ -98,6 +98,14 @@ header{
 
 /* Main content */
 
+.darkB{
+    background-color: rgb(20,20,20);
+}
+
+.whiteC{
+    color: white;
+}
+
 main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -217,6 +225,12 @@ article:hover .aTittelcon>p {
 .aTittel3{
     font-size: 1.2rem;
     text-align: center;
+}
+
+.icon:hover{
+    
+    color: black;
+
 }
 
 /*Main content end */
