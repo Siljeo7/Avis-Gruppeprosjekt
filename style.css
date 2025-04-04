@@ -32,6 +32,9 @@ a{
 
 
 /* Header */
+
+
+
 nav{
     display: flex;
     background-color: var(--lysgronn);
@@ -98,6 +101,10 @@ header{
 
 /* Main content */
 
+.darkGB{
+    background-color: var(--morkgronn);
+}
+
 .darkB{
     background-color: rgb(20,20,20);
 }
@@ -119,7 +126,7 @@ article {
     grid-column: span 1;
     grid-row: span 1;
     position: relative;
-    overflow: hidden; /* Ensure content doesn't overflow */
+    overflow: hidden;
 }
 #en{
     background-color: var(--gronn);
