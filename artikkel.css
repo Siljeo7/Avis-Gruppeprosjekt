@@ -251,6 +251,19 @@ aside {
  a {
     color: black;
 }
+
+.bold {
+    font-weight: bold;
+}
+
+.kongen {
+    display: flex;
+}
+
+.kongen img {
+    width: 200px;
+}
+
 /*Artikkel 3 slutt*/
 
 /*Artikkel 4*/
