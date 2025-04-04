@@ -101,9 +101,7 @@ header{
 }
 /* Header end */
 
-
-/* Main content */
-
+/* Darkmode classes */
 .darkGB{
     background-color: var(--morkgronn);
 }
@@ -115,6 +113,15 @@ header{
 .whiteC{
     color: white;
 }
+
+/* Darkmode classes end */
+
+
+/* Main content */
+
+
+
+
 
 main {
     display: grid;
