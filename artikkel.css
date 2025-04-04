@@ -192,10 +192,21 @@ aside {
 
 .forfatter {
     margin-bottom: 150px;
+    margin-top: 50px;
 }
 
 .forfatter * {
     margin: 10px;
+}
+
+.funfact {
+    margin-top: 4100px;
+    border: 1px solid var(--gronn);
+    padding: 20px;
+}
+
+.funfact h2 {
+    margin-bottom: 10px;
 }
 
 .footerh{
