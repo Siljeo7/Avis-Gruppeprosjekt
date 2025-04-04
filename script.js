@@ -17,9 +17,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
 const toppbox = document.querySelector(".scroll")
 
 function scrollTopp(){
     console.log("Scroller opp")
     window.scrollTo(0, 0);
+  }
+
+
+function darkmode(){
+    const body = document.body
+    body.classList.toggle("darkB");
+    const icon = document.getElementById("darkmodeIcon")
+    icon.classList.toggle("fa-moon");
+    icon.classList.toggle("fa-sun");
+    icon.classList.toggle("whiteC");
+    const leftpart = document.querySelector(".left")
+    const rightpart = document.querySelector(".right")
+
 }
