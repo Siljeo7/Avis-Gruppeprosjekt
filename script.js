@@ -9,6 +9,8 @@ const h1Elms = document.querySelectorAll("h1")
 const pElms = document.querySelectorAll("p")
 const h2Elms = document.querySelectorAll("h2")
 const h6Elms = document.querySelectorAll("h6")
+const container = document.querySelector(".container")
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -41,7 +43,7 @@ function darkmode(){
     
     navElm.classList.toggle("darkGB");
 
-    
+    container.classList.toggle("darkGB");
     const leftpart = document.querySelector(".left")
     const rightpart = document.querySelector(".right")
     leftpart.classList.toggle("darkGB");

@@ -99,6 +99,9 @@ header{
     padding: 10px;
     transition: all 0.2s ease-in-out;
 }
+#dropBtn{
+    display: none;
+}
 /* Header end */
 
 /* Darkmode classes */
@@ -262,6 +265,7 @@ article:hover .aTittelcon>p {
     height: 100%;
     object-fit: cover;
 }
+
 
 /*Main content end */
 
@@ -434,7 +438,12 @@ p .oss {
     }
     .left{
         width: 100%;
-        justify-content: center;
+        justify-content: space-between;
+    }
+    #dropBtn{
+        display: block;
+        
+    
     }
 }
 
@@ -457,6 +466,15 @@ p .oss {
         display: block;
     }
 }
+@media (max-width:500px){
+    .aTittelcon> h1{
+        font-size: 0.8rem;
+    }
+}
+
+
+
+/*Media quieries for Index end*/
 
 
 
