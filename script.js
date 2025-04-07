@@ -9,6 +9,8 @@ const h1Elms = document.querySelectorAll("h1")
 const pElms = document.querySelectorAll("p")
 const h2Elms = document.querySelectorAll("h2")
 const h6Elms = document.querySelectorAll("h6")
+const oppsum = document.querySelector(".oppsum")
+const pil = document.querySelector(".toggle-knapp")
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -38,7 +40,8 @@ function darkmode(){
     icon.classList.toggle("fa-moon");
     icon.classList.toggle("fa-sun");
     icon.classList.toggle("whiteC");
-    
+    oppsum.classList.toggle("darkGB");
+    pil.classList.toggle("greenGrey");
     navElm.classList.toggle("darkGB");
 
     
