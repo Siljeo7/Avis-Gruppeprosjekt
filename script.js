@@ -8,6 +8,7 @@ const navitems = document.querySelectorAll(".navitem")
 const h1Elms = document.querySelectorAll("h1")
 const pElms = document.querySelectorAll("p")
 const h2Elms = document.querySelectorAll("h2")
+const h6Elms = document.querySelectorAll("h6")
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -74,6 +75,12 @@ function darkmode(){
         
 
     });
+    h6Elms.forEach(h6ItemElm => {
+        h6ItemElm.classList.toggle("whiteC");
+        
+
+    });
+    
     
     
     
