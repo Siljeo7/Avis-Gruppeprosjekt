@@ -263,12 +263,13 @@ article:hover .aTittelcon>p {
 
 /* Footer */
 
-.footerh{
+.footerh {
     background-color: var(--gronn);
-    height: 400px;
-    width: 100%;
+    width: 100vw;
     margin-top: 50px;
     display: flex;
+    align-items: center;
+    flex-direction: column;
     gap: 50px;
     padding: 100px 50px;
 }
