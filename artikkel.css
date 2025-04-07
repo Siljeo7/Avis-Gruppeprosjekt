@@ -220,20 +220,28 @@ aside {
     background-color: var(--gronn);
     width: 100vw;
     margin-top: 50px;
-    display: flex;
+    display: grid;
     align-items: center;
     flex-direction: column;
-    gap: 50px;
+    justify-content: start;
+    gap: 40px;
     padding: 100px 50px;
 }
 
 .footerh h2 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: 550;
     color: black;
     text-transform: none;
 }
 
+.footerh h1{
+    margin: 0;
+}
+
+.footerh hr{
+    border: 0.1px solid black;
+}
 .footerh a {
     color: white;
 
