@@ -425,7 +425,8 @@ body {
         flex-direction: row;
     }
     article img{
-        width: 500px;
+        width: 100vw;
+        padding-right: 20px;
     }
     aside{
         display: flex;
@@ -451,6 +452,19 @@ body {
     h1{
         font-size: 40px;
     }
+    header img{
+        width: auto;
+    }
+    .login{
+        display: none;
+    }
+    .navitem{
+        display: none;
+    }
+    nav.right{
+        display: none;
+    }
+
 }
 
 
