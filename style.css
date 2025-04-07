@@ -481,7 +481,10 @@ p .oss {
         width: 95vw;
     }
     .bilde{
-        width: 95vw;
+        display: flex;
+        justify-content: center;
+        width: 90vw;
+        
     }
     .kilde{
         flex-direction: column;
