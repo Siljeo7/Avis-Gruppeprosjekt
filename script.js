@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const articleList = [
-    { title: "DeepSeek vs ChatGPT", url: "article1.htmll"},
+    { title: "DeepSeek vs ChatGPT", url: "article1.html"},
     { title: "Nytt KI-prosjekt skaper turbulens blant Trump sine næraste", url: "Artikkel3.html" },
     { title: "Tar grep om KI i høyere utdanning: – Viktig, mener jusstudent", url: "artikkel4.html" },
     { title: "Liberal dommarkandidat vann, nederlag for Musk", url: "artikkel5.html" },
