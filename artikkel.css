@@ -404,3 +404,53 @@ body {
 }
 
 /*TIL TOPPEN AVSLUTT*/
+
+
+
+
+/* MEDIA QUERIES ARTIKLER */
+@media(max-width: 1000px){
+    article{
+        width: 100vw;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    input{
+        display: none;
+    }
+    .left{
+        flex-direction: row;
+    }
+    article img{
+        width: 500px;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    footer{
+        background-color: var(--gronn);
+    }
+    .footerl img{
+        width: 350px;
+    }
+    .footerl{
+        display: flex;
+        align-items: center;
+    }
+    .footerh{
+        height: auto;
+    }
+    main{
+        width: 100vw;
+    }
+    h1{
+        font-size: 40px;
+    }
+}
+
+
+/*AVSLUTT*/
