@@ -63,7 +63,7 @@ input {
 }
 
 .logo {
-    height: 12vh;
+    height: 18vh;
     flex: 1;
 
 }
@@ -263,6 +263,7 @@ aside {
 .seksjon2 {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 a {
@@ -377,7 +378,7 @@ video {
 }
 
 .satsReklame p {
-    font-size: 10px;
+    font-size: 14px;
 }
 
 /* SATS REKLAME AVSLUTT*/
