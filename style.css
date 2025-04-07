@@ -257,6 +257,11 @@ article:hover .aTittelcon>p {
     color: black;
 
 }
+.img5{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /*Main content end */
 
@@ -410,6 +415,26 @@ p .oss {
     }
     #seks, #syv, #aatte{
         grid-column: span 4;
+    }
+    input{
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+    .navitem{
+        display: none;
+    }
+    nav.right{
+        display: none;
+    }
+    nav{
+        justify-content: center;
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+        justify-content: center;
     }
 }
 
