@@ -93,18 +93,19 @@ function darkmode(){
 }
 
 
+/*søkefelt*/
 document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.getElementById("searchIndex");
     const articles = document.querySelectorAll("main article");
 
     searchInput.addEventListener("input", () => {
-        const query = searchInput.value.toLowerCase();
+        const sok = searchInput.value.toLowerCase();
 
         articles.forEach(article => {
             const titleElement = article.querySelector("h1");
             const titleText = titleElement ? titleElement.textContent.toLowerCase() : "";
 
-            if (titleText.includes(query)) {
+            if (titleText.includes(sok)) {
                 article.style.display = "block";
             } else {
                 article.style.display = "none";
@@ -124,7 +125,7 @@ const articleList = [
     { title: "USAs teknologi-aksjer stabiliserer mens Nvidia stiger etter DeepSeek-sjokket", url: "subarticle1.html" }
   ];
   
-  // Dropdown-container
+  /* Dropdown-container*/
   const searchInput = document.getElementById('searchInput');
   const dropdown = document.createElement('div');
   dropdown.classList.add('dropdown');

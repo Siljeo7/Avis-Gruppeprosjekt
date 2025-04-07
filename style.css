@@ -383,9 +383,6 @@ p .oss {
 
 
 @media ( max-width : 1100px){
-    body{
-        
-    }
 
     .aTittelcon> p{
         display: none;
