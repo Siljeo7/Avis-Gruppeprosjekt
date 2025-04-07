@@ -119,7 +119,9 @@ header{
 
 /* Main content */
 
-
+.none{
+    display: none;
+}
 
 
 
@@ -242,6 +244,12 @@ article:hover .aTittelcon>p {
 .aTittel3{
     font-size: 1.2rem;
     text-align: center;
+}
+
+.aTittel4{
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
 }
 
 .icon:hover{
@@ -372,10 +380,41 @@ p .oss {
     .aTittelcon> h1{
         text-align: center;
     }
+    article:hover .aTittelcon {
+        height: 20%;
+    }
 }
 
-@media (max-width:930px){
-    #h1aatte{
-        font-size: 0.8rem;
+
+
+@media (max-width:800px){
+    #fire{
+        grid-column: span 6;
+    }
+    #fem{
+        grid-column: span 6;
+    }
+    #seks, #syv, #aatte{
+        grid-column: span 4;
+    }
+}
+
+@media (max-width:600px){
+    .navitem, .login{
+        font-size: 14px;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .aTittelcon> h1{
+        font-size: 0.9rem;
+    }
+    .aTittelcon{
+        min-height: 50px ;
+    }
+    #aTittelto{
+        display: none;
+    }
+    .none{
+        display: block;
     }
 }
