@@ -11,6 +11,7 @@ const h2Elms = document.querySelectorAll("h2")
 const h6Elms = document.querySelectorAll("h6")
 const oppsum = document.querySelector(".oppsum")
 const pil = document.querySelector(".toggle-knapp")
+console.log(navElm)
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -40,10 +41,10 @@ function darkmode(){
     icon.classList.toggle("fa-moon");
     icon.classList.toggle("fa-sun");
     icon.classList.toggle("whiteC");
-    oppsum.classList.toggle("darkGB");
-    pil.classList.toggle("greenGrey");
+    
+    
     navElm.classList.toggle("darkGB");
-
+    console.log("navElm class darkGB")
     
     const leftpart = document.querySelector(".left")
     const rightpart = document.querySelector(".right")
@@ -88,8 +89,11 @@ function darkmode(){
     
     
     console.log(document.querySelector(".login"))
-    document.getElementById("login").classList.toggle("whiteC")
+    document.querySelector(".login").classList.toggle("whiteC")
     document.getElementById("user").classList.toggle("whiteC")
+    oppsum.classList.toggle("darkGB");
+    pil.classList.toggle("greenGrey");
+    document.querySelector(".container").classList.toggle("darkGB");
 }
 
 
