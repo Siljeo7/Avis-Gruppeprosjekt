@@ -85,7 +85,7 @@ header{
     transition: all 0.2s ease-in-out;
 }
 
-.navitem:hover, .login:hover{
+.navitem:hover, .login:hover, #login:hover{
     background-color: var(--gronn);
     color: white;
     border-radius: 5px;
@@ -95,8 +95,8 @@ header{
 .login{
     display: flex;
     align-items: center;
-    gap: 5px;
-    padding: 10px;
+    gap: 10px;
+    padding: 10px; 
     transition: all 0.2s ease-in-out;
 }
 #dropBtn{
@@ -387,9 +387,6 @@ p .oss {
 
 
 @media ( max-width : 1100px){
-    body{
-        
-    }
 
     .aTittelcon> p{
         display: none;
@@ -524,7 +521,10 @@ p .oss {
         width: 95vw;
     }
     .bilde{
-        width: 95vw;
+        display: flex;
+        justify-content: center;
+        width: 90vw;
+        
     }
     .kilde{
         flex-direction: column;

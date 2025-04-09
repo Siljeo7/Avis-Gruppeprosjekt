@@ -9,8 +9,9 @@ const h1Elms = document.querySelectorAll("h1")
 const pElms = document.querySelectorAll("p")
 const h2Elms = document.querySelectorAll("h2")
 const h6Elms = document.querySelectorAll("h6")
-const container = document.querySelector(".container")
-
+const oppsum = document.querySelector(".oppsum")
+const pil = document.querySelector(".toggle-knapp")
+console.log(navElm)
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -40,6 +41,7 @@ function darkmode(){
     icon.classList.toggle("fa-moon");
     icon.classList.toggle("fa-sun");
     icon.classList.toggle("whiteC");
+    
     
     navElm.classList.toggle("darkGB");
 
@@ -87,6 +89,73 @@ function darkmode(){
     
     
     console.log(document.querySelector(".login"))
-    document.getElementById("login").classList.toggle("whiteC")
+    document.querySelector(".login").classList.toggle("whiteC")
     document.getElementById("user").classList.toggle("whiteC")
+    oppsum.classList.toggle("darkGB");
+    pil.classList.toggle("greenGrey");
+    document.querySelector(".container").classList.toggle("darkGB");
 }
+
+
+/*søkefelt*/
+document.addEventListener("DOMContentLoaded", () => {
+    const searchInput = document.getElementById("searchIndex");
+    const articles = document.querySelectorAll("main article");
+
+    searchInput.addEventListener("input", () => {
+        const sok = searchInput.value.toLowerCase();
+
+        articles.forEach(article => {
+            const titleElement = article.querySelector("h1");
+            const titleText = titleElement ? titleElement.textContent.toLowerCase() : "";
+
+            if (titleText.includes(sok)) {
+                article.style.display = "block";
+            } else {
+                article.style.display = "none";
+            }
+        });
+    });
+});
+
+const articleList = [
+    { title: "DeepSeek vs ChatGPT", url: "article1.html"},
+    { title: "Nytt KI-prosjekt skaper turbulens blant Trump sine næraste", url: "Artikkel3.html" },
+    { title: "Tar grep om KI i høyere utdanning: – Viktig, mener jusstudent", url: "artikkel4.html" },
+    { title: "Liberal dommarkandidat vann, nederlag for Musk", url: "artikkel5.html" },
+    { title: "Kunstig intelligens: hvordan vil det påvirke oss?", url: "artikkel2.html" },
+    { title: "DeepSeek, Den kinesiske AI-appen som får verden til å snakke?", url: "sub2article1.html" },
+    { title: "Australia advarer mot DeepSeek – men er det trygt å bruke?", url: "sub3article1.html" },
+    { title: "USAs teknologi-aksjer stabiliserer mens Nvidia stiger etter DeepSeek-sjokket", url: "subarticle1.html" }
+  ];
+  
+  /* Dropdown-container*/
+  const searchInput = document.getElementById('searchInput');
+  const dropdown = document.createElement('div');
+  dropdown.classList.add('dropdown');
+  searchInput.parentNode.appendChild(dropdown);
+  
+  searchInput.addEventListener('input', () => {
+    const input = searchInput.value.toLowerCase();
+    dropdown.innerHTML = '';
+  
+    if (input.length > 0) {
+      const filtered = articleList.filter(article => article.title.toLowerCase().includes(input));
+      filtered.forEach(article => {
+        const link = document.createElement('a');
+        link.href = article.url;
+        link.textContent = article.title;
+        dropdown.appendChild(link);
+      });
+  
+      if (filtered.length === 0) {
+        dropdown.innerHTML = '<p>Ingen treff</p>';
+      }
+    }
+  });
+
+  document.addEventListener('click', function(event) {
+    if (!searchInput.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.innerHTML = '';
+    }
+  });

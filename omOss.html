@@ -15,21 +15,21 @@
         <nav>
             <section class="left">
                 <a href="index.html"><img src="Bilder/logoRIKTIG.png" alt="" class="logo"></a>
-                <div class="login">
-                    <i class="fa-solid fa-user"></i>
-                    <a href="signInn.html" class="login">Sign in</a>
-                </div>
-                <a href="omOss.html" class="navitem">Om oss</a>      
-                <a href="tipsOss.html" class="navitem">Tips oss</a>  
+                <a class="login" href="signInn.html">
+                    <i class="fa-solid fa-user" id="user"></i>
+                    Sign in
+                </a>
+                <a href="omOss.html" class="navitem">Om oss</a>
+                <a href="tipsOss.html" class="navitem">Tips oss</a>
             </section>
             <section class="right">
-                <input type="text" placeholder="Søk...">
-                <div class="navitem">
-                    <i class="fa-solid fa-bars"></i>
+                <input type="text" id="searchInput" placeholder="Søk...">
+                <div class="navitem icon " onclick="darkmode()">
+                    <i class="fa-solid fa-moon" id="darkmodeIcon"></i>
                 </div>
-                
+    
             </section>
-            
+    
         </nav>
     </header>
 <div class="container">
@@ -128,7 +128,10 @@
     <section class="footerl">
         <img src="Bilder/logoRIKTIG.png" alt="">
     </section>
+    <script src="script.js"></script>
 </footer>
+
+<script src="script.js"></script>
 
 
 
