@@ -165,7 +165,7 @@ article {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 aside {
@@ -444,6 +444,11 @@ body {
     }
     .left{
         flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    .right{
+        display: none;
     }
     article img{
         width: 100vw;

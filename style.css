@@ -438,13 +438,17 @@ p .oss {
     nav{
         justify-content: center;
         width: 100%;
+
+    }
+    .right{
+        display: none;
     }
     .left{
         width: 100%;
-        justify-content: space-between;
+        justify-content: center;
     }
     #dropBtn{
-        display: block;
+        display: none;
         
     
     }
@@ -472,6 +476,10 @@ p .oss {
 @media (max-width:500px){
     .aTittelcon> h1{
         font-size: 0.8rem;
+    }
+    #en,#to, #tre, #fire, #fem, #seks, #syv, #aatte{
+        grid-column: span 6;
+        grid-row: span 3;
     }
 }
 
