@@ -249,11 +249,11 @@
     <main>
         <article>
             <h2>Logg inn:</h2>
-            <form action="takk2.html" method="post">
-                <label>Brukernavn:</label>
-                <input name="username">
-                <label>Passord:</label>
-                <input name="password">
+            <form action="takk2.html" method="get">
+                <label for="username">Brukernavn:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Passord:</label>
+                <input type="password" id="password" name="password" required>
                 <button type="submit">Logg inn</button>
             </form>
         </article>
