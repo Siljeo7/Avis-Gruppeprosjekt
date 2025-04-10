@@ -2,20 +2,47 @@
 
 
 :root{
---rosa: #f79d8dff;
---lysgronn: #94b3a2ff;
---gronn: #647d73ff;
---morkgronn: #404f4aff;
+    --rosa: #f79d8dff;
+    --lysgronn: #94b3a2ff;
+    --gronn: #647d73ff;
+    --morkgronn: #404f4aff;
+    --gragronn: #c3d5cbff;
+    --lysgragronn: #d6e1dbff;
+    --hvitgragronn: #e8edebff;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    transition: all 0.3s;
 }
 
 img{
     width: 100%;
     height: auto;
 }
+
+/* Darkmode classes */
+.greenGrey{
+    color: var(--hvitgragronn);
+}
+
+.greyGreen{
+    color: var(--gragronn);
+}
+
+.darkGB {
+    background-color: var(--morkgronn);
+}
+
+.darkB {
+    background-color: rgb(20, 20, 20);
+    color: var(--gragronn);
+}
+
+.whiteC {
+    color: white;
+}
+
+/* Darkmode classes end */
 

@@ -1,4 +1,4 @@
-const articles = document.querySelectorAll('article');
+
 const toppbox = document.querySelector(".scroll")
 let x = 0
 const body = document.body
@@ -18,16 +18,7 @@ console.log(leftpart)
 console.log(rightpart)
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const box = document.querySelector(".oppsum");
-    const button = document.querySelector(".toggle-knapp");
 
-    button.addEventListener("click", function () {
-        box.classList.toggle("utvid");
-
-        button.style.transform = box.classList.contains("utvid") ? "rotate(180deg)" : "rotate(0deg)";
-    });
-});
 
 
 
@@ -90,10 +81,20 @@ function darkmode(){
 }
 
 function darkmode2(){
-    console.log(document.querySelector("main"))
-    document.querySelector("main").classList.toggle("darkB")
+    console.log(document.querySelector(".container"))
+    document.querySelector(".container").classList.toggle("darkB")
 }
     
+document.addEventListener("DOMContentLoaded", function () {
+    const box = document.querySelector(".oppsum");
+    const button = document.querySelector(".toggle-knapp");
+
+    button.addEventListener("click", function () {
+        box.classList.toggle("utvid");
+
+        button.style.transform = box.classList.contains("utvid") ? "rotate(180deg)" : "rotate(0deg)";
+    });
+});
     
     
     

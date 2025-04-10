@@ -328,14 +328,7 @@ article:hover .aTittelcon>p {
 
 
 /* OM OSS SIN CSS*/
-.container{
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--rosa);
-    
-}
 
 .oss {
 
@@ -343,6 +336,7 @@ article:hover .aTittelcon>p {
     display: flex;
     padding-bottom: 100px;
     max-width: 1000px;
+    gap: 20px;
 
 }
 
@@ -379,6 +373,18 @@ p .oss {
 .bilde{
     display: flex;
     align-items: center;
+}
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.pink{
+    background-color: var(--rosa);
 }
 
 /*OM OSS SLUTT*/
