@@ -5,14 +5,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/59a3ebea89.js" crossorigin="anonymous"></script>
-    <title> Sign inn - AA </title>
+    <link rel="stylesheet" href="rootOgReset.css">
+    <title> Logg innn - AA </title>
     <style>
-        :root {
-            --rosa: #f79d8dff;
-            --lysgronn: #94b3a2ff;
-            --gronn: #647d73ff;
-            --morkgronn: #404f4aff;
+        a {
+            text-decoration: none;
+            color: black;
         }
+
+        /* Header */
+
+
+        .gray {
+            filter: grayscale(100%);
+        }
+
+        nav {
+            display: flex;
+            background-color: var(--lysgronn);
+            height: 100%;
+            align-items: center;
+            padding: 15px;
+            width: 100vw;
+        }
+
+        .left {
+            display: flex;
+            background-color: var(--lysgronn);
+            gap: 20px;
+            align-items: center;
+        }
+
+        .right {
+            display: flex;
+            margin-left: 20px;
+            gap: 20px;
+            justify-content: space-around;
+            background-color: var(--lysgronn);
+            flex: 1;
+            align-items: center;
+
+        }
+
+        #searchIndex {
+            margin: 0px;
+        }
+
+        input {
+            width: 60%;
+            padding: 10px;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .logo {
+            height: 19vh;
+            flex: 1;
+
+        }
+
+        header {
+            height: 20vh;
+        }
+
+        .navitem {
+            padding: 10px;
+            display: flex;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .navitem:hover,
+        .login:hover,
+        #login:hover {
+            background-color: var(--gronn);
+            color: white;
+            border-radius: 5px;
+        }
+
+
+        .login {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        #dropBtn {
+            display: none;
+        }
+
+        /* Header end */
+
+        main {
+            display: flex;
+            align-items: center;
+            height: 80vh;
+        }
+
 
         body {
             font-family: "Raleway", sans-serif;
@@ -29,11 +120,7 @@
             color: white;
         }
 
-        header {
-            background-color: var(--gronn);
-            padding: 20px;
-            width: 100vw;
-        }
+
 
 
         h2 {
@@ -47,25 +134,26 @@
             border: 1px solid var(--gronn);
             display: flex;
             flex-direction: column;
-            margin-top: 180px;
+
         }
 
-        button{
+        button {
             background-color: var(--rosa);
             padding: 10px;
             border: 1px solid var(--gronn);
             border-radius: 5px;
         }
 
-        i{
+        /*i {
             color: white;
             font-size: 2rem;
             margin-right: 280px;
             margin-left: -340px;
-        }
-        a{
+        }*/
+        a {
             text-decoration: none;
         }
+
         input {
             padding: 10px;
             border: 1px solid var(--gronn);
@@ -73,7 +161,7 @@
             margin-bottom: 20px;
         }
 
-       
+
 
         @media(max-width: 750px) {
             article {
@@ -90,34 +178,48 @@
                 font-size: 1.5rem;
             }
 
-            button{
+            button {
                 width: 100%;
             }
 
-            input{
+            input {
                 margin-bottom: 10px;
             }
 
-            form{
+            form {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
             }
-            
+
         }
-        
     </style>
 </head>
 
 <body>
 
-    <header>  
-        <h1>
-            <a href="index.html"><i class="fa-solid fa-arrow-left"></i>
-            </a>
-            Logg inn på algoritmeavisen
-        </h1>
+    <header>
+        <nav>
+            <section class="left">
+                <a href="index.html"><img src="Bilder/logoRIKTIG.png" alt="" class="logo "></a>
+                <a class="login" href="signInn.html">
+                    <i class="fa-solid fa-user" id="user"></i>
+                    Logg inn
+                </a>
+                <a href="omOss.html" class="navitem">Om oss</a>
+                <a href="tipsOss.html" class="navitem">Tips oss</a>
+            </section>
+            <section class="right">
+                <input type="text" id="searchIndex" placeholder="Søk...">
+                <div class="navitem icon " onclick="darkmode()">
+                    <i class="fa-solid fa-moon" id="darkmodeIcon"></i>
+                </div>
+
+            </section>
+
+        </nav>
     </header>
+
 
 
     <main>
@@ -128,12 +230,12 @@
                 <input name="username">
                 <label>Passord:</label>
                 <input name="password">
-                <button type="submit">Sign inn</button>
+                <button type="submit">Logg inn</button>
             </form>
         </article>
     </main>
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>

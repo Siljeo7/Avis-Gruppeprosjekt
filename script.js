@@ -9,9 +9,13 @@ const h1Elms = document.querySelectorAll("h1")
 const pElms = document.querySelectorAll("p")
 const h2Elms = document.querySelectorAll("h2")
 const h6Elms = document.querySelectorAll("h6")
+const leftpart = document.querySelector(".left")
+const rightpart = document.querySelector(".right")
 const oppsum = document.querySelector(".oppsum")
 const pil = document.querySelector(".toggle-knapp")
 console.log(navElm)
+console.log(leftpart)
+console.log(rightpart)
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -38,19 +42,18 @@ function darkmode(){
     
     body.classList.toggle("darkB");
     
+    
+    
     icon.classList.toggle("fa-moon");
     icon.classList.toggle("fa-sun");
     icon.classList.toggle("whiteC");
-    
-    
     navElm.classList.toggle("darkGB");
-
-    container.classList.toggle("darkGB");
-    const leftpart = document.querySelector(".left")
-    const rightpart = document.querySelector(".right")
     leftpart.classList.toggle("darkGB");
     rightpart.classList.toggle("darkGB");
     const logo = document.querySelector(".logo")
+    console.log(document.querySelector(".login"))
+    document.querySelector(".login").classList.toggle("whiteC")
+    document.getElementById("user").classList.toggle("whiteC")
     if (x == 0){
         x = 1
         logo.src="Bilder/LogoHvit.png"
@@ -84,17 +87,18 @@ function darkmode(){
         
 
     });
-    
-    
-    
-    
-    console.log(document.querySelector(".login"))
-    document.querySelector(".login").classList.toggle("whiteC")
-    document.getElementById("user").classList.toggle("whiteC")
-    oppsum.classList.toggle("darkGB");
-    pil.classList.toggle("greenGrey");
-    document.querySelector(".container").classList.toggle("darkGB");
 }
+
+function darkmode2(){
+    console.log(document.querySelector("main"))
+    document.querySelector("main").classList.toggle("darkB")
+}
+    
+    
+    
+    
+    
+    
 
 
 /*søkefelt*/
