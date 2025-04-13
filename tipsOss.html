@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/59a3ebea89.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="rootOgReset.css?v=1.0">
-    
+
     <title>Tips oss - AA</title>
     <style>
         /* Darkmode classes */
-        .greenGrey{
+        .greenGrey {
             color: var(--hvitgragronn);
         }
 
-        .greyGreen{
+        .greyGreen {
             color: var(--gragronn);
         }
 
@@ -31,7 +31,16 @@
             color: white;
         }
 
-/* Darkmode classes end */
+        .darkB .inp {
+            background-color: var(--gragronn);
+
+        }
+
+        .darkB #tips {
+            background-color: var(--gragronn);
+        }
+
+        /* Darkmode classes end */
 
         body {
             font-family: "Raleway", sans-serif;
@@ -42,27 +51,29 @@
             background-color: var(--gronn);
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 30px;
         }
 
-        h1{
+        h1 {
             text-transform: uppercase;
         }
 
-        h2{
+        h2 {
             text-transform: uppercase;
+            margin-bottom: 10px;
         }
 
         main {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 50px;
             padding: 20px;
         }
 
-        section {
+        #tps {
             border: 1px solid var(--gronn);
             padding: 20px;
+            border-radius: 5px;
         }
 
         form {
@@ -79,108 +90,104 @@
             height: 100px;
         }
 
-        button{
+        button {
             padding: 5px 20px;
             background-color: var(--rosa);
             color: white;
             border-radius: 5px;
             border: 1px solid black;
-            transition: background-color 0.3s ease;
+            transition: all 0.3s ease;
         }
 
-        button:hover{
+        button:hover {
             background-color: var(--gronn);
         }
 
-        /*i{
-            color: white;
-            font-size: 2rem;
-            margin-right: 540px;
-            margin-left: -600px;
-        }*/
-        a{
+        a {
             text-decoration: none;
             color: black;
         }
 
         /* Header */
 
-.gray{
-    filter: grayscale(100%);
-}
+        .gray {
+            filter: grayscale(100%);
+        }
 
-nav{
-    display: flex;
-    background-color: var(--lysgronn);
-    height: 100%;
-    align-items: center;
-    padding: 15px;
-    width: 100%;
-}
-.left{
-    display: flex;
-    background-color: var(--lysgronn);
-    gap: 20px;
-    align-items: center;
-}
-.right{
-    display: flex;
-    margin-left: 20px;
-    gap: 20px;
-    justify-content: space-around;
-    background-color: var(--lysgronn);
-    flex: 1;
-}
+        nav {
+            display: flex;
+            background-color: var(--lysgronn);
+            height: 100%;
+            align-items: center;
+            padding: 15px;
+            width: 100vw;
+        }
 
-input{
-    width: 60%;
-    padding: 10px;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid black;
-}
+        .left {
+            display: flex;
 
-#searchIndex{
-    border: none;
-}
+            gap: 20px;
+            align-items: center;
+        }
 
-.logo{
-    height: 19vh;
-    flex: 1;
-    
-}
+        .right {
+            display: flex;
+            margin-left: 20px;
+            gap: 20px;
+            justify-content: space-around;
 
-header{
-    height: 20vh;
+            flex: 1;
+            align-items: center;
 
-}
+        }
 
-.navitem{
-    padding: 10px;
-    display: flex;
-    transition: all 0.2s ease-in-out;
-}
+        #searchIndex {
+            margin: 0px;
+            width: 60%;
+            padding: 10px;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+        }
 
-.navitem:hover, .login:hover, #login:hover{
-    background-color: var(--gronn);
-    color: white;
-    border-radius: 5px;
-}
+        .logo {
+            height: 19vh;
+            flex: 1;
 
+        }
 
-.login{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px; 
-    transition: all 0.2s ease-in-out;
-}
-#dropBtn{
-    display: none;
-}
-/* Header end */
+        header {
+            height: 20vh;
+        }
+
+        .navitem {
+            padding: 10px;
+            display: flex;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .navitem:hover,
+        .login:hover,
+        #login:hover {
+            background-color: var(--gronn);
+            color: white;
+            border-radius: 5px;
+        }
 
 
+        .login {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        #dropBtn {
+            display: none;
+        }
+
+        /* Header end */
     </style>
 
 </head>
@@ -189,53 +196,52 @@ header{
 
     <header>
         <nav>
-            <div class="left">
+            <section class="left">
                 <a href="index.html"><img src="Bilder/logoRIKTIG.png" alt="" class="logo "></a>
                 <a class="login" href="signInn.html">
                     <i class="fa-solid fa-user" id="user"></i>
                     Logg inn
                 </a>
-                <a href="omOss.html" class="navitem">Om oss</a>      
-                <a href="tipsOss.html" class="navitem">Tips oss</a>  
-            </div> 
-            <div class="right">
+                <a href="omOss.html" class="navitem">Om oss</a>
+                <a href="tipsOss.html" class="navitem">Tips oss</a>
+            </section>
+            <section class="right">
                 <input type="text" id="searchIndex" placeholder="Søk...">
-                <div class="navitem icon " onclick="darkmode(); darkmode2()">
+                <div class="navitem icon " onclick="darkmode()">
                     <i class="fa-solid fa-moon" id="darkmodeIcon"></i>
                 </div>
-                
-            </div>
-            
+
+            </section>
+
         </nav>
     </header>
 
 
-    <div class="idek">  
+
+    <div class="idek">
         <h1>
-            
-            
             Tips oss
         </h1>
         <p>Har du et nyhetstips? Send oss din informasjon anonymt eller via våre sikre kanaler.</p>
     </div>
 
     <main>
-        <section>
+        <section id="tps">
             <h2>Hvordan tipse oss:</h2>
             <p>Du kan tipse oss via e-post, telefon eller vårt sikre skjema.</p>
         </section>
 
-        <section>
+        <section id="tps">
             <h2>Send inn tips</h2>
             <form action="takk.html" method="get">
                 <label>Navn (valgfritt):</label>
-                <input type="text" id="navn">
+                <input type="text" class="inp">
 
                 <label>E-post (valgfritt):</label>
-                <input type="text" id="email">
+                <input type="text" class="inp">
 
                 <label>Telefon (valgfritt):</label>
-                <input type="text" id="tlf">
+                <input type="text" class="inp">
 
                 <label>Ditt tips:</label>
                 <textarea type="text" id="tips"></textarea>
@@ -244,7 +250,7 @@ header{
             </form>
         </section>
 
-        <section>
+        <section id="tps">
             <h2>Kontakt oss direkte:</h2>
             <p><strong>E-post:</strong> tips@algoritmeavisen.no</p>
             <p><strong>Telefon:</strong> 123 45 678</p>
@@ -255,10 +261,10 @@ header{
 
     </script>
     <script>
-        
-    
+
+
     </script>
-    
+
 </body>
 
 </html>

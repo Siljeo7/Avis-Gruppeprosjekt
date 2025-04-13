@@ -32,9 +32,6 @@ function scrollTopp(){
 function darkmode(){
     
     body.classList.toggle("darkB");
-    
-    
-    
     icon.classList.toggle("fa-moon");
     icon.classList.toggle("fa-sun");
     icon.classList.toggle("whiteC");
@@ -78,6 +75,10 @@ function darkmode(){
         
 
     });
+    inputs.forEach(input => {
+        input.classList.toggle("darkInp");
+    });
+    
 }
 
 function darkmode2(){

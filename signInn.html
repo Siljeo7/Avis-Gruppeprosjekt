@@ -132,6 +132,11 @@
             border-radius: 5px;
             width: 100%;
             margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: var(--gronn);
         }
 
         input {
@@ -171,6 +176,21 @@
         .whiteC {
             color: white;
         }
+
+        .darkIN {
+            background-color: var(--gragronn);
+        }
+
+
+        .darkTA {
+            background-color: var(--gronn);
+        }
+
+        .darkB .inp {
+        background-color: var(--gragronn);
+    
+}
+
 
         /* Darkmode classes end */
 
@@ -241,11 +261,11 @@
             <form action="takk2.html" method="get">
                 <div>
                     <label for="username">Brukernavn:</label>
-                    <input type="text" id="username" name="username" required>
+                    <input type="text" class="inp" name="username" required>
                 </div>
                 <div>
                     <label for="password">Passord:</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" class="inp" name="password" required>
                 </div>
                 <button type="submit">Logg inn</button>
             </form>
