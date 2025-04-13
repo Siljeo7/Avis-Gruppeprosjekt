@@ -378,6 +378,14 @@ video {
     color: white;
 }
 
+.darkB .oppsum{
+    background-color: var(--morkgronn);
+}
+
+.darkB button{
+    color: var(--hvitgragronn);
+}
+
 /* Darkmode classes end */
 
 /* FINN REKLAME, HTML I ARTIKKEL 4*/
