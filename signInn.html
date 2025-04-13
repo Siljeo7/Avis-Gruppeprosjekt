@@ -31,7 +31,7 @@
 
         .left {
             display: flex;
-            
+
             gap: 20px;
             align-items: center;
         }
@@ -41,7 +41,7 @@
             margin-left: 20px;
             gap: 20px;
             justify-content: space-around;
-             
+
             flex: 1;
             align-items: center;
 
@@ -104,7 +104,6 @@
             height: 80vh;
         }
 
-
         body {
             font-family: "Raleway", sans-serif;
             color: var(--morkgronn);
@@ -114,27 +113,16 @@
             flex-direction: column;
         }
 
-        h1 {
-            text-align: center;
-            font-size: 3rem;
-            color: white;
-        }
-
-
-
-
         h2 {
             font-size: 2rem;
             margin-bottom: 60px;
         }
 
         article {
-            padding: 50px 200px 70px;
+            width: 650px;
+            padding: 50px;
             border-radius: 10px;
             border: 1px solid var(--gronn);
-            display: flex;
-            flex-direction: column;
-
         }
 
         button {
@@ -142,31 +130,32 @@
             padding: 10px;
             border: 1px solid var(--gronn);
             border-radius: 5px;
-        }
-
-        /*i {
-            color: white;
-            font-size: 2rem;
-            margin-right: 280px;
-            margin-left: -340px;
-        }*/
-        a {
-            text-decoration: none;
+            width: 100%;
+            margin-top: 10px;
         }
 
         input {
             padding: 10px;
             border: 1px solid var(--gronn);
             border-radius: 5px;
-            margin-bottom: 20px;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        form div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
         }
 
         /* Darkmode classes */
-        .greenGrey{
+        .greenGrey {
             color: var(--hvitgragronn);
         }
 
-        .greyGreen{
+        .greyGreen {
             color: var(--gragronn);
         }
 
@@ -250,10 +239,14 @@
         <article>
             <h2>Logg inn:</h2>
             <form action="takk2.html" method="get">
-                <label for="username">Brukernavn:</label>
-                <input type="text" id="username" name="username" required>
-                <label for="password">Passord:</label>
-                <input type="password" id="password" name="password" required>
+                <div>
+                    <label for="username">Brukernavn:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="password">Passord:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
                 <button type="submit">Logg inn</button>
             </form>
         </article>
